@@ -6,7 +6,7 @@ form.addEventListener("submit", async (event) => {
   const email = document.getElementById("email").value;
 
   try {
-    const response = await fetch("http://localhost:3000/subscribe", {
+    const response = await fetch("https://personal-website-l8ra.onrender.com/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
