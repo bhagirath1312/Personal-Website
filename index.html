@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB's Personal Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      window.addEventListener("load", function () {
+        // Hide the preloader once the page is loaded
+        document.getElementById("preloader").style.display = "none";
+
+        // Show the main content with a fade-in effect
+        const mainContent = document.getElementById("main-content");
+        mainContent.classList.add("visible");
+      });
+    </script>
+  </head>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  <body id="main-content">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-overlay">
+        <div class="container">
+          <h1 class="main-title">Hi, I'm <span class="highlight">BB</span></h1>
+          <p class="sub-title">Traveler | Engineer | Storyteller</p>
+          <p class="tagline">
+            Crafting code, capturing moments, and cherishing life’s stories.
+          </p>
+          <a href="#about" class="cta-btn-1">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm bb—a passionate traveler, tech enthusiast, and dreamer who
+          thrives on creativity and discovery. Currently pursuing my bachelor's
+          degree in Computer Engineering, I enjoy crafting elegant solutions to
+          complex problems while embracing the limitless possibilities of
+          technology. I am also exploring the world of iOS app development with
+          Swift, aiming to build user-friendly, impactful applications.
+        </p>
+        <p>
+          Beyond coding, I find joy in immersing myself in the beauty of
+          Gujarati literature. My cultural roots inspire me to delve into the
+          richness of language and heritage, which I often reflect upon during
+          my travels. My fascination with storytelling, whether through words or
+          visuals, fuels my desire to share experiences that connect and
+          inspire.
+        </p>
+        <p>
+          Traveling is more than just a hobby for me—it's a way of life. From
+          the golden sands of Jaisalmer to the vibrant streets of Ahmedabad,
+          every journey has gifted me with unique memories and broadened my
+          perspective. Through this website, I aspire to document my adventures,
+          celebrate my heritage, and inspire others to embrace curiosity and
+          exploration.
+        </p>
+        <p>
+          When I'm not working on tech projects or planning my next trip, you'll
+          find me enjoying music, experimenting with photography, or unwinding
+          with a good book. I believe in living life with passion, purpose, and
+          a sense of wonder.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <p>
+          Here are some of the projects I've worked on and published on GitHub.
+          Check them out!
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Weather App</h3>
+            <p>
+              This project is a web application built with Django to provide
+              real-time weather information. It integrates with weather APIs to
+              fetch and display current weather data based on user input.
+            </p>
+            <a
+              href="https://github.com/bhagirath1312/Weather-Application-Using-Django"
+              target="_blank"
+              class="cta-btn"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div class="project-card">
+            <h3>Event-Nest</h3>
+            <p>
+              Event-Nest is a full-stack web app for managing events, built with
+              a Django REST API backend and a React frontend powered by Vite.js.
+              It allows users to create, update, and manage event data
+              efficiently.
+            </p>
+            <a
+              href="https://github.com/bhagirath1312/Event-Nest"
+              target="_blank"
+              class="cta-btn"
+              >View on GitHub</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Newsletter</h3>
+            <p>
+              A simple React app that allows users to subscribe to a newsletter
+              by entering their email address. Upon subscribing, users receive a
+              confirmation email powered by EmailJS.
+            </p>
+            <a
+              href="https://github.com/bhagirath1312/Newsletter-using-react-and-emailjs"
+              target="_blank"
+              class="cta-btn"
+              >View on GitHub</a
+            >
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Journey Section -->
+    <section id="travel" class="travel-section">
+      <div class="container">
+        <h2>My Travel Journey</h2>
+        <p>
+          Explore some of the incredible places I've visited and the stories
+          behind them.
+        </p>
+        <div class="travel-grid">
+          <!-- Add your travel entries here -->
+          <a href="jaiselmer.html" style="text-decoration: none">
+            <div class="travel-card">
+              <img
+                src="media/BEE694BF-9FD3-4F28-892A-F48603A6D98C_1_105_c.jpeg"
+                alt="Jaisalmer"
+                class="travel-img"
+              />
+              <h3>Jaisalmer</h3>
+              <p>
+                Jaisalmer, known as the “Golden City,” is a captivating
+                destination located in the heart of the Thar Desert in
+                Rajasthan, India. Renowned for its golden sandstone architecture
+              </p>
+            </div>
+          </a>
+          <a href="barda_hills.html" style="text-decoration: none">
+            <div class="travel-card">
+              <img
+                src="media/7BB5718A-904B-4660-8634-4F7D1CFC52B9_1_105_c.jpeg"
+                alt="Barda Hills"
+                class="travel-img"
+              />
+              <h3>Barda Hills</h3>
+              <p>
+                Barda Hills, located near Porbandar in Gujarat, is a picturesque
+                and ecologically rich region. Known locally as Barda Dungar, the
+                area is part of the Barda Wildlife Sanctuary.
+              </p>
+            </div>
+          </a>
+          <div class="travel-card">
+            <img
+              src="media/6F86D253-EB04-4AA5-8D2D-E899C6ECEFC5_1_105_c.jpeg"
+              alt="Muli"
+              class="travel-img"
+            />
+            <h3>Muli</h3>
+            <p>
+              The Muli Swaminarayan Temple and the Madhavrayji Temple are two
+              significant religious landmarks located in Muli, Surendranagar,
+              Gujarat.
+            </p>
+          </div>
+        </div>
+        <div class="travel-grid">
+          <a href="gop.html" style="text-decoration: none">
+            <div class="travel-card">
+              <img
+                src="media/7F41BD08-5866-45F4-8C49-6B062A6D185F_1_105_c.jpeg"
+                alt="Gop"
+                class="travel-img"
+              />
+              <h3>Gop</h3>
+              <p>
+                Gop is a small village located near Dwarka in Gujarat, India,
+                known for its religious and cultural significance. It holds a
+                special place in Hindu mythology, especially in connection to
+                Lord Krishna
+              </p>
+            </div>
+          </a>
+          <a href="khimrana.html" style="text-decoration: none">
+            <div class="travel-card">
+              <img
+                src="media/7501F110-1CFC-4EE9-A70E-1CFEAC94299A_1_105_c.jpeg"
+                alt="Khimrana"
+                class="travel-img"
+              />
+              <h3>Khimrana</h3>
+              <p>
+                The temple is primarily dedicated to Lord Shiva, with the main
+                deity being represented in the form of a Shivling. Devotees come
+                to offer prayers and perform rituals to seek divine blessings
+                and spiritual peace.
+              </p>
+            </div>
+          </a>
+          <a href="chalala.html" style="text-decoration: none">
+            <div class="travel-card">
+              <img
+                src="media/A01020C5-43AD-4F44-8ED0-1B84AE34C1C7_1_105_c.jpeg"
+                alt="Chalala"
+                class="travel-img"
+              />
+              <h3>Chalala</h3>
+              <p>
+                Chalala Apa Dan is a well-known religious tradition or event
+                associated with the town of Chalala in Gujarat. The term Apa Dan
+                refers to a form of charity or donation, typically during
+                religious occasions
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 BB's Personal Website | All Rights Reserved</p>
+          <div class="social-links">
+            <a href="https://github.com/bhagirath1312" target="_blank" aria-label="Visit my GitHub" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/bhagirath_bhatti/" target="_blank" aria-label="Follow me on Instagram" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
