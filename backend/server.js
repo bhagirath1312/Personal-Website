@@ -9,7 +9,7 @@ app.use(express.json());
 app.post('/subscribe', (req, res) => {
   const { email } = req.body;
 
-  // email Validate
+  // email Validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return res.status(400).json({ error: 'Invalid email address' });
