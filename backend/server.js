@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const cors = require('cors');
 require('dotenv').config();
-app.use(cors({ origin: 'https://personal-website-1-en50.onrender.com/' }));
+app.use(cors({ origin: 'https://personal-website-1-en50.onrender.com' }));
 app.use(express.json()); 
 
 app.post('/subscribe', (req, res) => {
